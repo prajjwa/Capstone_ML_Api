@@ -15,6 +15,7 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 from sklearn import cluster
 
+
 app = FastAPI()
 
 origins = [
