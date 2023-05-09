@@ -29,12 +29,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-os.chdir("C:/Users/prajj/OneDrive/Desktop/capstoneserver/model/Predicting-sensory-evaluation-of-spinach-freshness-using-machine-learning-model-and-digital-images/Attached_file")
+cwd = os.getcwd()
 
+# print(cwd)
+
+os.chdir(cwd)
+# os.chdir("C:/Users/prajj/OneDrive/Desktop/capstoneserver/model/Predicting-sensory-evaluation-of-spinach-freshness-using-machine-learning-model-and-digital-images/Attached_file")
 
 loaded_model = joblib.load('./models_grid.pkl')
-
-
 
 CLASS_NAMES = ["not very fresh", "fresh", "fresh", "very fresh"]
 
